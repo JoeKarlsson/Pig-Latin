@@ -27,12 +27,6 @@ phrase = 'This phrase will be converted into piglatin, please insert your phrase
 
 pigString= 'is-Thay ig-Pay atin-Lay ase-phray ill-way e-bay anslated-tray ack-bay into-ay e-thay ative-nay anguage-lay -asay -aay ing.-stray'
 
-## Additional Requirements
-- Create a Git Repository for this challenge
-    - commit often and have your commit messages be descriptive
-- Write tests for your function using the Mocha and Chai Libraries.
-  - Provide test for all cases. Handle unexpected inputs, invalid arguments, etc.
-
 !['Pig latin'](https://media.giphy.com/media/c2rJA8UVBVodi/giphy.gif)
 
 Thaaaaaaanks :D
