@@ -8,9 +8,26 @@
 </head>
 <body>
     <h1>Pig Latin Translator</h1>
-    <form>
 
+    <form id="myform" class="myform">
+      <fieldset>
+        <legend>Pig Latin Translator</legend>
+        <br>
+        <textarea rows="6" cols="50" class="pigInput" id="pigInput" type="text" name="pigInput">Type phrase to be translated here</textarea>
+        <br><br>
+        <button>
+          <a href="javascript: submitPigPhrase()">
+            Submit
+          </a>
+        </button>
+
+      </fieldset>
     </form>
+
+    <div id="translation">
+      <!-- Translated pig latin goes here -->
+    </div>
+
     <script type="text/javascript" src="pigLatin.js"></script>
 </body>
 </html>
