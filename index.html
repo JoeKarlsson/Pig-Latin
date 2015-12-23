@@ -98,11 +98,48 @@
     </div>
 
     <div class="section get-help">
+      <div class="container">
+          <div class="row">
+            <div class="six columns">
+              <h3>Basically, the Pig Latin system used here works as follows:</h3>
+              <p>You take the first letter of a word (e.g. Hello = H) and use the last letters (e.g. Hello = ello) and add 'ay' to the first letter (e.g. Hello = Ello hay).</p>
+              <ul>
+                <li>Words that start with a vowel (A, E, I, O, U) simply have "ay" appended to the end of the word. Examples are:</li>
+                  <ul>
+                    <li>"eat" → "eatay"</li>
+                    <li>"omelet" → "omeletay"</li>
+                    <li>"are" → "areay"</li>
+                  </ul>
+              </ul>
+
+            </div>
+
+            <div class="six columns">
+              <ul>
+                <li>Words that start with a consonant have all consonant letters up to the first vowel moved to the end of the word (as opposed to just the first consonant letter), and "-ay" is appended. -('Y' is counted as a vowel in this context). Examples are:</li>
+                  <ul>
+                    <li>"pig" → "ig-pay"</li>
+                    <li>"banana" → "anana-bay"</li>
+                    <li>"trash" → "ash-tray"</li>
+                    <li>"happy" → "appy-hay"</li>
+                    <li>"duck" → "uck-day"</li>
+                    <li>"glove" → "ove-glay"</li>
+                  </ul>
+              </ul>
+
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="section values">
         <div class="row">
           <div class="container">
             <div class="six columns"></div>
           <h3 class="section-heading">Like what you see?</h3>
-          <p class="section-description">My name is Joe, and I am a full-stack JavaScript developer. To check out more of my projects, please visit <a href="http://www.callmejoe.net/">my website</a>. To see the <a href="https://github.com/JoeKarlsson1/Pig-Latin">source code</a> click the link to the repo.</p>
+          <p class="section-description">My name is Joe, and I am a full-stack JavaScript developer. To check out more of my projects, please visit <a href="http://www.callmejoe.net/">my website</a>. To see the <a href="http://www.callmejoe.net/">source code</a> click the link to the repo.</p>
           <a class="button button-primary" target="_blank" href="http://www.callmejoe.net/">Check Me Out</a>
           <a class="button button-primary" target="_blank" href="https://github.com/JoeKarlsson1/Pig-Latin">GitHub Repo</a>
 
@@ -120,7 +157,7 @@
           </div>
         </div>
 
-    </div>
+      </div>
     </div>
 
     <script type="text/javascript" src="pigLatin.js"></script>
