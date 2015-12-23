@@ -4,12 +4,15 @@
 function submitPigPhrase() {
 
   var input = document.getElementById('pigInput').value;
-
-  //append to the DOM
   var translation = document.getElementById('translation');
+
+  var header = document.createElement('h3');
   var text = document.createElement('p');
 
-  //clear DOM
+  //clear previous translation from the DOM
+  translation.removeChild(translation.firstChild)
+
+  //Append newly translated phrase to the DOM
   text.innerHTML = pigPhrase(input);
   translation.appendChild(text);
 }
