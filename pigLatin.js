@@ -1,5 +1,18 @@
-module.exports = pigPhrase;
-module.exports = unpigPhrase;
+// module.exports = pigPhrase;
+// module.exports = unpigPhrase;
+
+function submitPigPhrase() {
+
+  var input = document.getElementById('pigInput').value;
+
+  //append to the DOM
+  var translation = document.getElementById('translation');
+  var text = document.createElement('p');
+
+  //clear DOM
+  text.innerHTML = pigPhrase(input);
+  translation.appendChild(text);
+}
 
 /**
  * Takes an sentence and converts each word into pig latin
@@ -67,6 +80,6 @@ function findFirstVowel (word) {
   return word.length;
 }
 
-console.log(pigPhrase('I built a pig latin translator program'));
+// console.log(pigPhrase('I built a pig latin translator program'));
 //
 // console.log(unpigPhrase( 'is-Thay ig-Pay atin-Lay ase-phray ill-way e-bay anslated-tray ack-bay into-ay e-thay ative-nay anguage-lay -asay -aay ing.-stray' ));

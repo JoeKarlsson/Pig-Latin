@@ -1,16 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta charset="UTF-8">
     <title>Pig Latin Translator</title>
+    <content="Translates from any language into Pig Latin!">
+    <meta name="author" content="Joe Karlsson &lt;joe [at] callmejoe [dot] net&gt;">
+    <meta name="copyright" content="Copyright (c) 2016 - Joe Carlson">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+    <!-- OG Meta Data
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta property="og:description" content="Translates from any language into Pig Latin!">
+    <meta property="og:title" content="Pig Latin Translator">
+    <meta property="og:url" content="https://github.com/JoeKarlsson1/Pig-Latin">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://bechdel-test.herokuapp.com/img/bechdel-test-rectangle.jpg">
+    <link rel="author" href="https://plus.google.com/u/0/+JoeKarlsson/posts">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="Translates from any language into Pig Latin!">
+    <meta name="twitter:title" content="Pig Latin Translator">
+    <meta name="twitter:site" content="@JoeCarlson131">
+    <meta name="twitter:image" content="https://bechdel-test.herokuapp.com/img/bechdel-test-rectangle.jpg">
+    <meta name="twitter:creator" content="@josephcarlson131">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/img/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/img/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/img/manifest.json">
+    <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff87c3">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/img/mstile-144x144.png">
+    <meta name="theme-color" content="#ff87c3">
+
 </head>
 <body>
-    <h1>Pig Latin Translator</h1>
-    <form>
 
+  <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <div class="section hero">
+      <div class="container">
+        <div class="row">
+          <div class="one-half column">
+            <h4 class="hero-heading">Stop coding non-responsive sites. Let users view sites from anywhere.</h4>
+            <a class="button button-primary" href="http://getskeleton.com">Try Skeleton</a>
+          </div>
+          <div class="one-half column phones">
+            <img class="phone" src="img/my_logo_450.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section values">
+      <div class="container">
+        <div class="row">
+          <div class="one-third column value">
+            <h2 class="value-multiplier">67%</h2>
+            <h5 class="value-heading">Purchase Increase</h5>
+            <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.</p>
+          </div>
+          <div class="one-third column value">
+            <h2 class="value-multiplier">90%</h2>
+            <h5 class="value-heading">Multi-device Users</h5>
+            <p class="value-description">Most of the world accesses the internet on multiple devices.</p>
+          </div>
+          <div class="one-third column value">
+            <h2 class="value-multiplier">66%</h2>
+            <h5 class="value-heading">Sad Users</h5>
+            <p class="value-description">Percentage of users that are frustrated with page load times.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section get-help">
+      <div class="container">
+        <h3 class="section-heading">Need help getting started?</h3>
+        <p class="section-description">Skeleton is an amazingly easy place to start with responsive development. If you want to learn more, just visit the documentation!</p>
+        <a class="button button-primary" href="http://getskeleton.com">View Skeleton Docs</a>
+      </div>
+    </div>
+
+
+    <!-- Secondary Page Layout
+      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <h1>Pig Latin Translator</h1>
+
+    <form id="myform" class="myform">
+      <fieldset>
+        <legend>Pig Latin Translator</legend>
+        <br>
+        <textarea rows="6" cols="50" class="pigInput" id="pigInput" type="text" name="pigInput">Type phrase to be translated here</textarea>
+        <br><br>
+        <button>
+          <a href="javascript: submitPigPhrase()">
+            Submit
+          </a>
+        </button>
+
+      </fieldset>
     </form>
+
+    <div id="translation">
+      <!-- Translated pig latin goes here -->
+    </div>
+
     <script type="text/javascript" src="pigLatin.js"></script>
 </body>
 </html>
