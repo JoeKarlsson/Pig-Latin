@@ -69,12 +69,10 @@
     <div class="section hero">
       <div class="container">
         <div class="row">
-          <div class="one-half column">
-            <h4 class="hero-heading">Stop coding non-responsive sites. Let users view sites from anywhere.</h4>
-            <a class="button button-primary" href="http://getskeleton.com">Try Skeleton</a>
-          </div>
-          <div class="one-half column phones">
-            <img class="phone" src="img/my_logo_450.png">
+          <div class="u-max-full-width ">
+            <h4 class="hero-heading">Pig Latin Translator</h4>
+            <img class="pig" src="img/my_logo_450.png">
+            <h5>A JavaScript tool that translates any language into Pig Latin.</h5>
           </div>
         </div>
       </div>
@@ -82,24 +80,25 @@
 
     <div class="section values">
       <div class="container">
-        <div class="row">
-          <div class="one-third column value">
-            <h2 class="value-multiplier">67%</h2>
-            <h5 class="value-heading">Purchase Increase</h5>
-            <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.</p>
+        <form>
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleMessage">Type a phrase you need translated into Pig Latin</label>
+              <textarea rows="6" cols="50" class="u-full-width pigInput" id="pigInput" type="text" placeholder="This text will be converted into Pig Latin" name="pigInput"></textarea>
+
+              <a class="button button-primary" href="javascript: submitPigPhrase()">Translate</a>
+            </div>
+            <div class="six columns" id="translation">
+
+            </div>
           </div>
-          <div class="one-third column value">
-            <h2 class="value-multiplier">90%</h2>
-            <h5 class="value-heading">Multi-device Users</h5>
-            <p class="value-description">Most of the world accesses the internet on multiple devices.</p>
-          </div>
-          <div class="one-third column value">
-            <h2 class="value-multiplier">66%</h2>
-            <h5 class="value-heading">Sad Users</h5>
-            <p class="value-description">Percentage of users that are frustrated with page load times.</p>
-          </div>
-        </div>
+
+        </form>
       </div>
+    </div>
+
+    <div id="translation">
+      <!-- Translated pig latin goes here -->
     </div>
 
     <div class="section get-help">
@@ -108,31 +107,6 @@
         <p class="section-description">Skeleton is an amazingly easy place to start with responsive development. If you want to learn more, just visit the documentation!</p>
         <a class="button button-primary" href="http://getskeleton.com">View Skeleton Docs</a>
       </div>
-    </div>
-
-
-    <!-- Secondary Page Layout
-      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-    <h1>Pig Latin Translator</h1>
-
-    <form id="myform" class="myform">
-      <fieldset>
-        <legend>Pig Latin Translator</legend>
-        <br>
-        <textarea rows="6" cols="50" class="pigInput" id="pigInput" type="text" name="pigInput">Type phrase to be translated here</textarea>
-        <br><br>
-        <button>
-          <a href="javascript: submitPigPhrase()">
-            Submit
-          </a>
-        </button>
-
-      </fieldset>
-    </form>
-
-    <div id="translation">
-      <!-- Translated pig latin goes here -->
     </div>
 
     <script type="text/javascript" src="pigLatin.js"></script>

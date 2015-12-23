@@ -8,7 +8,6 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
   padding: 8rem 0 7rem;
-  text-align: center;
 }
 .section-heading,
 .section-description {
@@ -17,16 +16,13 @@
 
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.phones {
-  position: relative;
+.hero {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
-.phone {
-  position: relative;
-  max-width: 80%;
-  margin: 3rem auto -12rem;
-}
-.phone + .phone {
-  display: none;
+.hero-heading {
+  text-align: center;
 }
 
 /* Values
@@ -73,24 +69,9 @@
   }
   .hero {
     padding-bottom: 12rem;
-    text-align: left;
     height: 165px;
   }
-  .phone {
-    position: absolute;
-    top: -7rem;
-    right: 3rem;
-    max-height: 362px;
-    z-index: 3;
-  }
-  .phone + .phone {
-    top: -6rem;
-    display: block;
-    max-width: 73.8%;
-    right: 0;
-    z-index: 2;
-    max-height: 338px;
-  }
+
   .hero-heading {
     font-size: 2.4rem;
   }
@@ -115,15 +96,6 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .phone {
-    top: -14rem;
-    right: 5rem;
-    max-height: 510px;
-  }
-  .phone + .phone {
-    top: -12rem;
-    max-height: 472px;
-  }
   .categories {
     padding: 15rem 0 8rem;
   }
@@ -139,13 +111,5 @@
   }
   .hero-heading {
     font-size: 3.0rem;
-  }
-  .phone {
-    top: -16rem;
-    max-height: 615px;
-  }
-  .phone + .phone {
-    top: -14rem;
-    max-height: 570px;
   }
 }
