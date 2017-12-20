@@ -1,4 +1,6 @@
 # Pig Latin Translator
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/JoeKarlsson/Pig-Latin.svg)](https://greenkeeper.io/)
 I created a module that translates a string into Pig Latin, and is capable of translating Pig Latin back into in the native language.
 
 You can check out the page [here](https://joekarlsson1.github.io/Pig-Latin/).
