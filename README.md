@@ -2,7 +2,7 @@
 
 I created a module that translates a string into Pig Latin, and is capable of translating Pig Latin back into in the native language.
 
-You can check out the page [here](https://joekarlsson.github.io/Pig-Latin/).
+You can check out the page [here](https://piglatin.joekarlsson.com/).
 
 
 ## How Pig Latin Works
